@@ -42,9 +42,9 @@ export default function Home() {
   }
 
   return (
-    <div className="w-screen min-h-screen flex flex-col items-center justify-center bg-gray-500 p-6">
-      
-    <div><h1 className="text-center text-7xl text-yellow-800 font-bold m-5">Create Your Git visiting Card</h1></div>
+    <div className="w-screen min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
+
+      <div><h1 className="text-center text-7xl text-yellow-800 font-bold m-5">Create Your Git visiting Card</h1></div>
 
       <form onSubmit={handleSubmit} className="flex gap-3 mb-8">
         <input
@@ -105,7 +105,7 @@ export default function Home() {
       <button onClick={downloadCard} className="bg-black text-sm text-white m-2 rounded-2xl pl-4 pr-4 cursor-pointer">Download PNG</button>
       <div className="flex justify-center items-center gap-2">
 
-      <input type="checkbox" ref={emailRef} />
+        <input type="checkbox" ref={emailRef} />
         <label>Include E-mail</label>
       </div>
     </div>
